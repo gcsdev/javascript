@@ -1,0 +1,13 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#conteudo{
+	width: 465px;
+	height: 500px;
+	margin: 0 auto;
+	text-align: left;
+	background-image: url("../img/background_finish.png");
+	border: 1px solid #ffffff;
+}

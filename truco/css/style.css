@@ -1,0 +1,37 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	text-align: center;
+}
+#conteudo{
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+#cu1{
+	position: relative;
+	margin: 50%;	
+}
+#img_bg00, #img_bg10,#img_bg20,#img_bg01,#img_bg11,#img_bg21,#img_mesa00,#img_mesa10,#img_mesa20,
+#img_mesa01,#img_mesa11,#img_mesa21{
+	width: 10%;
+	height: 20%;
+	border:solid 1px #000000;
+	border-radius: 12px;
+	margin: 0.5%; 
+}
+#estrela_pontos{
+	position: relative;
+	top: opx;
+	width: 1.5%;
+	height: 1.5%;
+	margin: 0; 
+}
+#coroa_pontos{
+	position: relative;
+	top: opx;
+	width: 1.5%;
+	height: 1.5%;
+	margin: 0; 
+}
