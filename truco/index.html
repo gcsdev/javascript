@@ -4,6 +4,7 @@
 			<meta charset="utf-8"/>
 			<title>truco</title>
 			<link rel="stylesheet" type="text/css" href="./css/style.css" >
+			<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" >
 			<link href="./img/favicon.ico" rel="shortcut icon">
 			<script src="./js/cartas.js"></script>
 			<script src="./js/torneio.js"></script>
@@ -12,14 +13,17 @@
 		<body>	
 			<div id="conteudo">	
 				<br>
-				<input type="button" value="Distribuir Cartas" onclick="embaralha_distribui()">
-				<input type="button" value="Iniciar" onclick="iniciar_jogo()">
+				<button type="button" class="btn btn-success" onclick="embaralha_distribui()">Distribuir Cartas</button>
 				<br><br>
-				<label id="label_u1" name="label_u1">Competidor 1</label>
-				<hr>
-				<label id="label_p1" name="label_p1">Mao: <div style="display:inline" id="img_de_mao0"></div></label><br>
-				<label id="label_p1" name="label_p1">Rodada: <div style="display:inline" id="img_de_pontos0"></div></label>
+				<span id="label_u1" name="label_u1" class="label label-pill label-primary">Competidor 1</span>
+				<label id="label_p1" name="label_p1" style="margin-left:10%; display:inline; ">Rodada: 
+						<div style="display:inline" id="img_de_pontos0"></div>
+					</label>
 				
+				<label id="label_p1" name="label_p1" style="margin-left:30%; display:inline;">Mao: 
+						<div style="display:inline" id="img_de_mao0"></div>
+					</label>
+					
 				<br><br>			
 				<span  id="user1" name="user1"></span>
 				<div id="cu1 " name="cu1" >
@@ -32,18 +36,20 @@
 					<img style="display:none;" id="img_mesa20" src="./img/carta_jogada.png"/>
 				</div>
 				<br>
-				<input type="button" id="truco0"  value="Pedir Truco" onclick="truco(this)">			
-				<input type="button" id="btn_aceitar0"  value="Aceitar" onclick="aceitar_truco(this);"/>
-				<input type="button" id="btn_recusar0"  value="Recusar" onclick="recusar(this);"/>
-
-				<br><br>
-				<label id="label_u2" name="label_u2">Competidor 2</label>
+				<button type="button" id="truco0" value="Pedir Truco" class="btn btn-primary-outline" onclick="truco(this)">Pedir Truco</button>			
+				<button type="button" id="btn_aceitar0"  value="Aceitar" class="btn btn-warning-outline" onclick="aceitar_truco(this);">Aceitar</button>
+				<button type="button" id="btn_recusar0" value="Recusar" class="btn btn-danger-outline" onclick="recusar(this);">Recusar</button>
 				<hr>
-				<label id="label_p1" name="label_p1">Mão: <div style="display:inline" id="img_de_mao1"></div></label><br>
-				<label id="label_p1" name="label_p1">Rodada: <div style="display:inline" id="img_de_pontos1"></div></label>
-				<br><br>
+				<span id="label_u2" name="label_u2" class="label label-pill label-danger">Competidor 2</span>
+					<label id="label_p1" name="label_p1" style="margin-left:10%; display:inline;">Rodada: 
+						<div style="display:inline;" id="img_de_pontos1"></div>
+					</label>
+
+					<label id="label_p1" name="label_p1" style="margin-left:30%; display:inline;">Mão: 
+						<div style="display:inline" id="img_de_mao1"></div>
+					</label>
+				<br><br>			
 				<span id="user2" name="user2"></span>
-				
 				<div id="cu2 " name="cu2">
 					<img id="img_bg01" src="./img/bg.png" onclick="processa_escolha(this)"></img>
 					<img id="img_bg11" src="./img/bg.png" onclick="processa_escolha(this)"></img>
@@ -53,9 +59,9 @@
 					<img style="display:none;"id="img_mesa21" src="./img/carta_jogada.png"/>
 				</div>
 				<br>
-				<input type="button" id="truco1" value="Pedir Truco" onclick="truco(this);"/>
-				<input type="button" id="btn_aceitar1"  value="Aceitar" onclick="aceitar_truco(this)"/>
-				<input type="button" id="btn_recusar1"  value="Recusar" onclick="recusar(this);"/>
+				<button type="button" id="truco1" value="Pedir Truco" class="btn btn-primary-outline" onclick="truco(this);">Pedir Truco</button>
+				<button type="button" id="btn_aceitar1" value="Aceitar" class="btn btn-warning-outline" onclick="aceitar_truco(this)">Aceitar</button>
+				<button type="button" id="btn_recusar1" value="Recusar" class="btn btn-danger-outline" onclick="recusar(this);">Recusar</button>
 				<hr>	
 			<br><br>
 			</div>
