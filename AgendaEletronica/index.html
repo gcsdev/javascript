@@ -1,0 +1,51 @@
+<!DOCTYPE  html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/Core.js"></script>
+	<script type="text/javascript" src="js/Arvore.js"></script>
+	<script type="text/javascript" src="js/Fila.js"></script>
+	<script type="text/javascript" src="js/Pessoa.js"></script>
+	<script type="text/javascript" src="js/Telefone.js"></script>
+	<script type="text/javascript" src="js/AgendaEletronica.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript">
+		processarCalculo = function(){
+			var core = new Core();
+			core.recuperaElementos();
+		};
+	</script>
+	<title>Memory Management</title>
+</head>
+<body>
+<div style="margin-top:5px;"></div>	
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Dumbphones - Memory Management</h3>
+  </div>
+  <div class="panel-body">
+  	<label>Add the amount and the number of phones line by line:</label>
+
+	<form id="entrada_form">
+		<textarea form="entrada_form" id="dados-entrada" rows="10" cols="56">
+5
+0412573212
+0412198903
+0468829011
+112
+15
+</textarea>
+			<hr>
+			<button type="button" class="btn btn-default" aria-label="Left Align" onclick="processarCalculo(this);">
+				<span>Solve</span>
+			</button>
+	</form>
+	<br>
+	<label for="Resposta">Memory Required:</label>
+	<span id="resposta"></span>
+
+  </div>
+  <div class="panel-footer" style="text-align:center;">©Dumbphones - All Rights Reserved</div>
+</div>
+</body>
+</html>

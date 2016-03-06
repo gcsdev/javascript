@@ -1,0 +1,12 @@
+Para executar:
+->Abra o arquivo index.html no seu navegador;
+->Digite na caixa de texto a entrada no formato: quantidade de telefones e os respectivos telefones;
+ exemplo:
+ 		5 
+		0412573212 
+		0412198903 
+		0468829011 
+		112 
+		15
+->Pressione o botão "Solve" para calcular a quantidade de memória necessária;
+->Visualize a resposta na frente do texto: "Memory Required:"
